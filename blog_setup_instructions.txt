@@ -36,6 +36,7 @@ $ npm init
 $ npm install express mongoose body-parser --save
 $ npm install ejs --save
 
+################ Blog Index ##################
 
 create the app.js file and open
 add the requirements: express, body-parser, mongoose
@@ -74,4 +75,54 @@ set up the blogs.forEach command to run through each blog post
 		time created
 		body
 run localhost again to test
+
+
+
+
+########## Basic Layout ##########
+
+make views/partials folder
+make views/partials/header.ejs file
+make views/partials/footer.ejs file
+
+in the header file
+	set up html boilerplate code
+	move the ending </body> </html> tags to the footer file
+	place temporary test h1 inside both header and footer just to test connectivity
+	link to both in the index.ejs file
+		<%- include ("partials/header") %>
+		<%- include ("partials/footer") %>
+
+
+
+########## Putting the C in CRUD ##########
+
+
+
+
+########## SHOWtime ##########
+
+
+
+
+
+
+
+
+########## Edit/Update ##########
+
+
+
+
+
+
+########## DESTROYYYYYY ##########
+
+
+
+
+
+
+
+########## Final Updates ##########
 
