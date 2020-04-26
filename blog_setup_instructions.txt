@@ -121,6 +121,12 @@ add form for new.ejs
 
 set up create blog route for where the new.ejs request is submitted
 
+style the form - new.ejs
+	put all entry fields into a div
+	make the blog entry part a textarea type
+	style the submit button
+	make entry fields required
+
 
 
 
