@@ -1,57 +1,49 @@
+$ npm init
+
+	package name: (blog) letsprogramnow_blog
+	version: (1.0.0)
+	description: Blog for my journey
+	entry point: (index.js) app.js
+	test command:
+	git repository: (https://github.com/alkalinemusic/letsprogramnow_blog.git)
+	keywords:
+	author: Alan Shepherd
+	license: (ISC)
+	About to write to C:\Users\ashep\Documents\Coding\Web_Dev\LetsProgramNow\blog\package.json:
+
+	{
+	  "name": "letsprogramnow_blog",
+	  "version": "1.0.0",
+	  "description": "Blog for my journey",
+	  "main": "app.js",
+	  "scripts": {
+	    "test": "echo \"Error: no test specified\" && exit 1"
+	  },
+	  "repository": {
+	    "type": "git",
+	    "url": "git+https://github.com/alkalinemusic/letsprogramnow_blog.git"
+	  },
+	  "author": "Alan Shepherd",
+	  "license": "ISC",
+	  "bugs": {
+	    "url": "https://github.com/alkalinemusic/letsprogramnow_blog/issues"
+	  },
+	  "homepage": "https://github.com/alkalinemusic/letsprogramnow_blog#readme"
+	}
 
 
 
+$ npm install express mongoose body-parser --save
+$ npm install ejs --save
 
-# RESTful Routing
 
-## Introduction
+create the app.js file and open
+add the requirements: express, body-parser, mongoose
+create the express app object
 
-    Define REST and explain WHY it matters
-    List all 7 RESTful routes
-    Show example of RESTful routing in practice
+app configuration
+	connect to mongoose 
+	enable ejs - view engine
 
-## Blog Index
-
-    Setup the Blog App
-    Create the Blog model
-    Add INDEX route and template
-
-## Basic Layout
-
-    Add Header and Footer Partials
-    Include Semantic UI
-    Add Simple Nav
-
-## Putting the C in CRUD
-
-    Add NEW route
-    Add NEW template
-    Add CREATE route
-    Add CREATE template
-
-##SHOWtime
-
-    Add Show route
-    Add Show template
-    Add links to show page
-    Style show template
-
-## Edit/Update
-
-    Add Edit Route
-    Add Edit Form
-    Add Update Route
-    Add Update Form
-    Add Method-Override
-
-## DESTROYYYYYY
-
-    Add Destroy Route
-    Add Edit and Destroy Links
-
-## Final Updates
-
-    Sanitize blog body
-    Style Index
-    Update REST Table
+create the listen port for the server
 
