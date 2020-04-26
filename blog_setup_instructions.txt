@@ -106,12 +106,22 @@ make stylesheets/main.css file
 
 
 
-
-
-
-
-
 ########## Putting the C in CRUD ##########
+
+create route for the 'create new blog post'
+make views/new.ejs
+
+add css for the container.main so the menu bar does not cover it
+
+add form for new.ejs
+	input for title
+	input for image
+	input for blog body
+	submit button
+
+set up create blog route for where the new.ejs request is submitted
+
+
 
 
 
