@@ -93,6 +93,8 @@ in the header file
 		<%- include ("partials/header") %>
 		<%- include ("partials/footer") %>
 
+add in semantic UI CDN link to header file
+
 
 
 ########## Putting the C in CRUD ##########
