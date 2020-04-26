@@ -24,10 +24,8 @@ var Blog = mongoose.model("Blog", blogSchema);
 
 // RESTful ROUTES
 
-Blog.create({
-	title: "Test blog",
-	image: "https://images.unsplash.com/photo-1587616285545-79fdadbd01e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-	body: "Hello this is a blog post"
+app.get("/", function(req, res){
+	res.send("You've reached the home page!");
 });
 
 
