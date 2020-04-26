@@ -93,7 +93,21 @@ in the header file
 		<%- include ("partials/header") %>
 		<%- include ("partials/footer") %>
 
-add in semantic UI CDN link to header file
+header file
+	add in semantic UI CDN link
+	add menu(nav) bar
+		create the home link
+		create the new blog link
+		create the icon next to the home link
+			i used one from semantic
+make public directory
+make stylesheets directory
+make stylesheets/main.css file
+
+
+
+
+
 
 
 
