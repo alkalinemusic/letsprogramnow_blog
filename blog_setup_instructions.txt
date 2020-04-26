@@ -51,3 +51,27 @@ create the listen port for the server
 add the index route: app.get("/", function(woieurioulakjsdfojisf0))
 to make sure that everything is set up correctly
 
+open up localhost:3000 to make sure all is working
+
+set the route to /blogs
+	set render to index(.ejs) file
+
+make views directory
+make views/index.ejs file
+	place test text of <h1>TEST PAGE</h1> in this file
+view localhost with /blogs(route) added to end
+
+app.js
+	add the Blog.find to the index route
+	render the blogs: blogs from the database
+
+add the <%= blogs %> into the index.ejs file and test on localhost to confirm the route is working
+
+set up the blogs.forEach command to run through each blog post
+	each run through should have a separate tag for
+		title
+		image
+		time created
+		body
+run localhost again to test
+
