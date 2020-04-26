@@ -47,3 +47,7 @@ app configuration
 
 create the listen port for the server
 
+
+add the index route: app.get("/", function(woieurioulakjsdfojisf0))
+to make sure that everything is set up correctly
+
