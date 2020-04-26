@@ -128,12 +128,19 @@ style the form - new.ejs
 	make entry fields required
 
 
-
-
-
-
 ########## SHOWtime ##########
 
+create the show route with a res.redirect(initially) to ensure connectivity
+
+add link to 'show more' in the index.ejs file. this will let the user view just the one blog 
+	add an anchor with the href set to "/blogs/"<%= blog._id %>"
+
+create the logic for the route and display that show template
+this will render to the show.ejs file, which shows just the one, chosen blog
+
+create touch/views/show.ejs
+	copy the new.ejs contents, but only keep >> header/footer and container and header(class) divs
+	
 
 
 
