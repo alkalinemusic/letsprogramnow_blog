@@ -24,9 +24,11 @@ var Blog = mongoose.model("Blog", blogSchema);
 
 // RESTful ROUTES
 
-app.get("/", function(req, res){
-	res.send("You've reached the home page!");
+app.get("/blogs", function(req, res){
+	res.render("index");
 });
+
+
 
 
 
