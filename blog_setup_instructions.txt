@@ -140,11 +140,15 @@ this will render to the show.ejs file, which shows just the one, chosen blog
 
 create touch/views/show.ejs
 	copy the new.ejs contents, but only keep >> header/footer and container and header(class) divs
-	
+	test to make sure the route works and shows the blog title
+	add the image, body, and time created. just grab these lines from the index.ejs file
+	stylize the remaining contents in the page
+	<get semantic layout ideas for this section from the 'views/item' section in the semantic ui docs
+	change date created to more readable form - add .toDateString()
 
+permit html in the create blog section- we'll sanitize this later on so scripts can't be run
 
-
-
+limit the blog post body to 100 characters in the main index page
 
 
 
