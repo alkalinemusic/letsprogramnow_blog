@@ -183,6 +183,26 @@ ensure the title is now working correctly
 	the textarea is slightly different
 		put <%= blog.body %> in between the textarea tags
 
+add the update route - this is a POST request
+simple res.send to ensure connectivity
+
+edit.ejs
+	change the method to PUT
+	change the action route to /blogs/<%= blog._id %>?_method=PUT
+
+need to use the method-override package
+
+npm install method-override --save
+
+in app.js 
+	<put this line at the top with the other requirements>
+	methodOverride = require("method-override")
+	add the app config >> app.use(methodOverride("_method"));
+
+	check connection
+	add correct method to send the updated info
+		Blog.findByIdAndUpdate
+	
 
 
 ########## DESTROYYYYYY ##########
