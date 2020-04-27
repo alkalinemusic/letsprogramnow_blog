@@ -217,6 +217,13 @@ show.ejs
 		inside the form, create a 'delete' button
 
 
-
 ########## Final Updates ##########
 
+add edit link on show page
+show.ejs
+	make anchor tag for button
+		form and anchor are not inline elements
+		this makes the buttons not on the same line
+		add display: inline to the form(for delete button)
+		add the css to main.css
+		add the id to the form
