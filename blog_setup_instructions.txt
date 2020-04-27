@@ -154,8 +154,34 @@ limit the blog post body to 100 characters in the main index page
 
 ########## Edit/Update ##########
 
+app.js file:
+	create the minimal edit route that renders to the edit form(not yet created)
+
+create the views/edit.ejs file
+
+edit.ejs file:
+	put in an h1 just to ensure connectivity
+	grab the content from the 'new'.ejs file and copy to edit.ejs
+	change the page title
+	form needs to be pre-filled
+
+app.js 
+	need to find the blog info to be edited
+	use the findById function
+		Blog.findById(req.params.is, function(err, foundBlog){
+			if error
+				redirect to blogs
+			else
+				redirect to edit with the foundBlog as blog info
+		});
 
 
+edit.ejs
+	change title to 'Edit <%= blog.title %>' as we want the actual name of the blog to be edited
+ensure the title is now working correctly
+	change the placeholders to a value="" and put the blog title, image and text values in to each one, as they need to show the existing data so we can edit it
+	the textarea is slightly different
+		put <%= blog.body %> in between the textarea tags
 
 
 
