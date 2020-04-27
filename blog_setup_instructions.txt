@@ -202,14 +202,19 @@ in app.js
 	check connection
 	add correct method to send the updated info
 		Blog.findByIdAndUpdate
-	
+
 
 
 ########## DESTROYYYYYY ##########
 
+app.js
+	create the destroy route
+		make a simple send at first for connectivity
 
-
-
+show.ejs
+	add a form for the delete action
+		<form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+		inside the form, create a 'delete' button
 
 
 

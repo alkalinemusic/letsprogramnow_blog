@@ -11,6 +11,9 @@
 			<div class="description">
 				<p><%- blog.body %></p> <!-- the dash in here allows for html to be entered -->
 			</div>
+			<form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+				<button class="ui red big basic button">Delete!</button>
+			</form>
 		</div>	
 	</div>
 </div>
