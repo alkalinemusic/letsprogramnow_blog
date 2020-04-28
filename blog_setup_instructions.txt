@@ -216,9 +216,6 @@ show.ejs
 		<form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
 		inside the form, create a 'delete' button
 
-
-########## Final Updates ##########
-
 add edit link on show page
 show.ejs
 	make anchor tag for button
@@ -227,3 +224,23 @@ show.ejs
 		add display: inline to the form(for delete button)
 		add the css to main.css
 		add the id to the form
+
+########## Final Updates ##########
+
+use sanitizer to forbid scripts from being run
+
+npm install express-sanitizer --save
+
+app.js
+	add require line for express-sanitizer
+		expressSanitizer = requier("express-sanitizer")
+	add to app config section
+	must be after the bodyParser line
+
+	add to create and update routes, as these are being sent to the database
+
+	create and update routes
+		req.body.blog.body = sanitize(req.body.blog.body)
+		this needs to go after the first line in the route, after the app.get......
+
+
