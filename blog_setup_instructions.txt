@@ -244,3 +244,6 @@ app.js
 		this needs to go after the first line in the route, after the app.get......
 
 
+style the blogs page
+index.ejs
+	lots of re-styling to this page
